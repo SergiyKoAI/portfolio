@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SergiyKo_AI — AI Portfolio</title>
+<title>SergiyKo_AI — AI Portfolio v37 | Editable</title>
 <style>
   :root{
     --bg:#dcecff;
@@ -529,6 +529,27 @@
     text-decoration:none;
   }
 
+
+  .work-item-wrap{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-width:0;
+  }
+  .work-item-wrap .work-card{
+    width:100%;
+  }
+  .work-item-wrap .full-video-btn{
+    margin-top:8px;
+    text-align:center;
+  }
+  .works-grid > .work-item-wrap{
+    min-width:0;
+  }
+  @media(max-width:850px){
+    .works-grid > .work-item-wrap{width:100%}
+  }
+
   @media print{
     @page{size:A4;margin:0}
     body{background:#fff}
@@ -538,6 +559,12 @@
     .page-num{right:18mm;bottom:10mm}
     .footer{display:none}
   }
+
+  /* v37: five selected works cards */
+  .works-grid{grid-template-columns:repeat(5,1fr);}
+  @media(max-width:1100px){.works-grid{grid-template-columns:repeat(3,1fr);}}
+  @media(max-width:850px){.works-grid{grid-template-columns:1fr;}}
+
 </style>
 </head>
 <body>
@@ -602,8 +629,8 @@
           </div>
           <div>
             <div class="hero-video-wrap">
-              <video class="hero-video" controls playsinline preload="metadata" poster="images/image_00.jpg">
-                <source src="videos/video_00.mp4" type="video/mp4">
+              <video class="hero-video" controls playsinline preload="metadata" poster="images/embedded_01.jpg">
+                <source src="videos/hero.mp4" type="video/mp4">
                 Your browser does not support embedded video.
               </video>
               <div class="video-note"></div>
@@ -625,7 +652,7 @@
         <div class="grid2 equal">
           <div>
             <div style="display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:start">
-              <img src="images/image_01.jpg" alt="Sergiy Apeksimov" style="width:120px;height:120px;object-fit:cover;border-radius:22px;border:1px solid #d8def0">
+              <img src="images/embedded_01.jpg" alt="Sergiy Apeksimov" style="width:120px;height:120px;object-fit:cover;border-radius:22px;border:1px solid #d8def0">
               <div>
                 <div class="star">*</div>
                 <h2>AI Content<br>Creator</h2>
@@ -637,7 +664,7 @@
             </p>
           </div>
           <div class="profile-card">
-            
+            <h3>Snapshot</h3>
             <ul class="profile-list">
               <li><span class="label">Focus</span><span>AI-based video and image generation; animation; video production; creative storytelling.</span></li>
               <li><span class="label">Experience</span><span>AI Content Creator; client work across various industries; freelance projects on Fiverr.</span></li>
@@ -720,49 +747,63 @@
 
         <div class="works-grid">
 
-          <article class="work-card" data-work-type="video" data-src="videos/video_01.mp4" data-title="Archie & Kid — The Forgotten Guardian">
+          <div class="work-item-wrap" id="work-wrap-5995697608166328034">
+<article class="work-card" data-work-type="video" data-src="videos/archie_kid_forgotten_guardian.mp4" data-title="Archie & Kid — The Forgotten Guardian">
             <video class="work-media" muted playsinline loop preload="metadata">
-              <source src="videos/video_02.mp4" type="video/mp4">
+              <source src="videos/archie_kid_forgotten_guardian.mp4" type="video/mp4">
             </video>
             <div class="work-info">
               <div class="work-kicker">Cinematic AI Storytelling</div>
-              <div class="work-sub"></div>
-              <div class="work-actions"><div class="work-action">Watch preview →</div><a class="full-video-btn" href="https://www.instagram.com/p/DcgkEPrKwvA/" target="_blank" rel="noopener noreferrer">Watch Full Video →</a></div>
-            </div>
-          </article>
+              <div class="work-actions"><div class="work-action">Watch preview →</div>
+<a class="full-video-btn external-video-link" href="https://www.instagram.com/p/DcgkEPrKwvA/" target="_blank" rel="noopener noreferrer">Watch Full Video →</a>
+</div>
 
-          <article class="work-card" data-work-type="video" data-src="videos/video_03.mp4" data-title="EMBER & CO. — AI Brand Commercial">
+          <div class="work-item-wrap" id="work-wrap-6097640292855813048">
+<article class="work-card" data-work-type="video" data-src="videos/ember_co_ai_brand_commercial.mp4" data-title="EMBER & CO. — AI Brand Commercial">
             <video class="work-media" muted playsinline loop preload="metadata">
-              <source src="videos/video_04.mp4" type="video/mp4">
+              <source src="videos/ember_co_ai_brand_commercial.mp4" type="video/mp4">
             </video>
             <div class="work-info">
               <div class="work-kicker">Brand & Advertising</div>
-              <div class="work-sub"></div>
-              <div class="work-actions"><div class="work-action">Watch preview →</div><a class="full-video-btn" href="https://www.instagram.com/p/DU3dgbvgmAR/" target="_blank" rel="noopener noreferrer">Watch Full Video →</a></div>
-            </div>
-          </article>
+              <div class="work-actions"><div class="work-action">Watch preview →</div>
+<a class="full-video-btn external-video-link" href="https://www.instagram.com/p/DU3dgbvgmAR/" target="_blank" rel="noopener noreferrer">Watch Full Video →</a>
+</div>
 
-          <article class="work-card" data-work-type="video" data-src="videos/video_05.mp4" data-title="Shtrudel — Story-driven Commercial">
+          <div class="work-item-wrap" id="work-wrap-400232797394293666">
+<article class="work-card" data-work-type="video" data-src="videos/shtrudel_story_driven_commercial.mp4" data-title="Shtrudel — Story-driven Commercial">
             <video class="work-media" muted playsinline loop preload="metadata">
-              <source src="videos/video_06.mp4" type="video/mp4">
+              <source src="videos/shtrudel_story_driven_commercial.mp4" type="video/mp4">
             </video>
             <div class="work-info">
               <div class="work-kicker">Creative Advertising</div>
-              <div class="work-sub"></div>
-              <div class="work-actions"><div class="work-action">Watch preview →</div><a class="full-video-btn" href="https://www.instagram.com/p/DWJ0G7CAi4r/" target="_blank" rel="noopener noreferrer">Watch Full Video →</a></div>
-            </div>
-          </article>
+              <div class="work-actions"><div class="work-action">Watch preview →</div>
+<a class="full-video-btn external-video-link" href="https://www.instagram.com/p/DWJ0G7CAi4r/" target="_blank" rel="noopener noreferrer">Watch Full Video →</a>
+</div>
 
-          <article class="work-card" data-work-type="video" data-src="videos/video_07.mp4" data-title="AI Music Visual">
+          <div class="work-item-wrap" id="work-wrap-1290727959070004632">
+<article class="work-card" data-work-type="video" data-src="videos/ai_music_visual.mp4" data-title="AI Music Visual">
             <video class="work-media" muted playsinline loop preload="metadata">
-              <source src="videos/video_08.mp4" type="video/mp4">
+              <source src="videos/ai_music_visual.mp4" type="video/mp4">
             </video>
             <div class="work-info">
               <div class="work-kicker">Music Video & Social Content</div>
-              <div class="work-sub"></div>
-              <div class="work-actions"><div class="work-action">Watch preview →</div><a class="full-video-btn" href="https://www.instagram.com/p/DZSirk6MmNv/" target="_blank" rel="noopener noreferrer">Watch Full Video →</a></div>
-            </div>
-          </article>
+              <div class="work-actions"><div class="work-action">Watch preview →</div>
+<a class="full-video-btn external-video-link" href="https://www.instagram.com/p/DZSirk6MmNv/" target="_blank" rel="noopener noreferrer">Watch Full Video →</a>
+
+<article class="work-card" data-work-type="video" data-src="videos/advance_preview_latest_22s.mp4" data-title="ADVANCE — HE KNOWS | AI Spec Commercial">
+  <video class="work-media" muted playsinline loop preload="metadata">
+    <source src="videos/advance_preview_latest_22s.mp4" type="video/mp4">
+  </video>
+  <div class="work-info">
+    <div class="work-kicker">Brand &amp; Advertising</div>
+    <div class="work-actions">
+      <div class="work-action">Watch preview →</div>
+      <a class="full-video-btn external-video-link" href="https://www.instagram.com/p/DdopMcPqEEv/" target="_blank" rel="noopener noreferrer">Watch Full Video →</a>
+    </div>
+  </div>
+</article>
+
+</div>
 
           <div class="universe-card">
             <div class="universe-head">
@@ -778,8 +819,8 @@
             </div>
 
             <div class="universe-gallery">
-              <div class="universe-main" data-universe-src="images/image_02.png" data-universe-alt="COSMIC PIRATE">
-                <img src="images/image_03.png" alt="COSMIC PIRATE">
+              <div class="universe-main" data-universe-src="images/embedded_02.png" data-universe-alt="COSMIC PIRATE">
+                <img src="images/embedded_02.png" alt="COSMIC PIRATE">
                 <div class="universe-main-label">
                   <div class="small">Main Character</div>
                   <h3>Cosmic Pirate Archie</h3>
@@ -788,20 +829,20 @@
               </div>
 
               <div class="universe-thumbs" aria-label="Archie Universe characters">
-                <div class="universe-item" data-universe-src="images/image_04.png" data-universe-alt="GLADIATOR">
-                  <img src="images/image_05.png" alt="GLADIATOR">
+                <div class="universe-item" data-universe-src="images/embedded_03.png" data-universe-alt="GLADIATOR">
+                  <img src="images/embedded_03.png" alt="GLADIATOR">
                   <div class="universe-label">GLADIATOR</div>
                 </div>
-                <div class="universe-item" data-universe-src="images/image_06.png" data-universe-alt="ASTRONAUT">
-                  <img src="images/image_07.png" alt="ASTRONAUT">
+                <div class="universe-item" data-universe-src="images/embedded_04.png" data-universe-alt="ASTRONAUT">
+                  <img src="images/embedded_04.png" alt="ASTRONAUT">
                   <div class="universe-label">ASTRONAUT</div>
                 </div>
-                <div class="universe-item" data-universe-src="images/image_08.png" data-universe-alt="SURFER">
-                  <img src="images/image_09.png" alt="SURFER">
+                <div class="universe-item" data-universe-src="images/embedded_05.png" data-universe-alt="SURFER">
+                  <img src="images/embedded_05.png" alt="SURFER">
                   <div class="universe-label">SURFER</div>
                 </div>
-                <div class="universe-item" data-universe-src="images/image_10.png" data-universe-alt="ROYAL ARCHIE">
-                  <img src="images/image_11.png" alt="ROYAL ARCHIE">
+                <div class="universe-item" data-universe-src="images/embedded_06.png" data-universe-alt="ROYAL ARCHIE">
+                  <img src="images/embedded_06.png" alt="ROYAL ARCHIE">
                   <div class="universe-label">ROYAL ARCHIE • NEW</div>
                 </div>
               </div>
@@ -842,7 +883,7 @@
         </div>
 
         <div class="cert google-feature" style="margin-top:20px;padding:12px">
-          <img src="images/image_12.png" alt="Google AI Professional Certificate"
+          <img src="images/embedded_07.png" alt="Google AI Professional Certificate"
                style="width:100%;height:235px;object-fit:contain;background:#f8f9ff;border-radius:12px;display:block">
           <small>GOOGLE / COURSERA • GOOGLE AI PROFESSIONAL CERTIFICATE • JUN 17, 2026</small>
         </div>
@@ -850,12 +891,12 @@
         <h3 style="margin-top:20px">Completed Courses</h3>
         <div class="small-note" style="margin-top:5px">Click any certificate to open it full-size and read the details.</div>
         <div class="cert-grid" style="grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px">
-          <div class="cert compact"><img src="images/image_13.png" alt="AI FUNDAMENTALS • MAY 14, 2026"><small>AI FUNDAMENTALS • MAY 14, 2026</small></div>
-<div class="cert compact"><img src="images/image_14.png" alt="AI FOR BRAINSTORMING AND PLANNING • MAY 18, 2026"><small>AI FOR BRAINSTORMING AND PLANNING • MAY 18, 2026</small></div>
-<div class="cert compact"><img src="images/image_15.png" alt="AI FOR RESEARCH AND INSIGHTS • MAY 21, 2026"><small>AI FOR RESEARCH AND INSIGHTS • MAY 21, 2026</small></div>
-<div class="cert compact"><img src="images/image_16.png" alt="AI FOR WRITING AND COMMUNICATING • MAY 28, 2026"><small>AI FOR WRITING AND COMMUNICATING • MAY 28, 2026</small></div>
-<div class="cert compact"><img src="images/image_17.png" alt="AI FOR CONTENT CREATION • JUN 8, 2026"><small>AI FOR CONTENT CREATION • JUN 8, 2026</small></div>
-<div class="cert compact"><img src="images/image_18.png" alt="AI FOR DATA ANALYSIS • JUN 10, 2026"><small>AI FOR DATA ANALYSIS • JUN 10, 2026</small></div>
+          <div class="cert compact"><img src="images/embedded_08.png" alt="AI FUNDAMENTALS • MAY 14, 2026"><small>AI FUNDAMENTALS • MAY 14, 2026</small></div>
+<div class="cert compact"><img src="images/embedded_09.png" alt="AI FOR BRAINSTORMING AND PLANNING • MAY 18, 2026"><small>AI FOR BRAINSTORMING AND PLANNING • MAY 18, 2026</small></div>
+<div class="cert compact"><img src="images/embedded_10.png" alt="AI FOR RESEARCH AND INSIGHTS • MAY 21, 2026"><small>AI FOR RESEARCH AND INSIGHTS • MAY 21, 2026</small></div>
+<div class="cert compact"><img src="images/embedded_11.png" alt="AI FOR WRITING AND COMMUNICATING • MAY 28, 2026"><small>AI FOR WRITING AND COMMUNICATING • MAY 28, 2026</small></div>
+<div class="cert compact"><img src="images/embedded_12.png" alt="AI FOR CONTENT CREATION • JUN 8, 2026"><small>AI FOR CONTENT CREATION • JUN 8, 2026</small></div>
+<div class="cert compact"><img src="images/embedded_13.png" alt="AI FOR DATA ANALYSIS • JUN 10, 2026"><small>AI FOR DATA ANALYSIS • JUN 10, 2026</small></div>
         </div>
       </div>
     </div>
@@ -884,12 +925,12 @@
 
         <div class="small-note" style="margin-top:22px">Click any certificate to open it full-size and read the details.</div>
         <div class="cert-grid" style="grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px">
-          <div class="cert compact"><img src="images/image_19.png" alt="ALPI • AI AVATARS • MAR 21, 2025"><small>ALPI • AI AVATARS • MAR 21, 2025</small></div>
-<div class="cert compact"><img src="images/image_20.png" alt="ALPI • AI BRAND IDENTITY • OCT 7, 2024"><small>ALPI • AI BRAND IDENTITY • OCT 7, 2024</small></div>
-<div class="cert compact"><img src="images/image_21.png" alt="FRANCH AI • AI CREATOR • JUL 2, 2024"><small>FRANCH AI • AI CREATOR • JUL 2, 2024</small></div>
-<div class="cert compact"><img src="images/image_22.png" alt="FRANCH AI • AI REELS • SEP 12, 2024"><small>FRANCH AI • AI REELS • SEP 12, 2024</small></div>
-<div class="cert compact"><img src="images/image_23.png" alt="FRANCH AI • AI START • JUN 8, 2024"><small>FRANCH AI • AI START • JUN 8, 2024</small></div>
-<div class="cert compact"><img src="images/image_24.jpg" alt="CANVA • 5 DESIGNS ACHIEVEMENT"><small>CANVA • 5 DESIGNS ACHIEVEMENT</small></div>
+          <div class="cert compact"><img src="images/embedded_14.png" alt="ALPI • AI AVATARS • MAR 21, 2025"><small>ALPI • AI AVATARS • MAR 21, 2025</small></div>
+<div class="cert compact"><img src="images/embedded_15.png" alt="ALPI • AI BRAND IDENTITY • OCT 7, 2024"><small>ALPI • AI BRAND IDENTITY • OCT 7, 2024</small></div>
+<div class="cert compact"><img src="images/embedded_16.png" alt="FRANCH AI • AI CREATOR • JUL 2, 2024"><small>FRANCH AI • AI CREATOR • JUL 2, 2024</small></div>
+<div class="cert compact"><img src="images/embedded_17.png" alt="FRANCH AI • AI REELS • SEP 12, 2024"><small>FRANCH AI • AI REELS • SEP 12, 2024</small></div>
+<div class="cert compact"><img src="images/embedded_18.png" alt="FRANCH AI • AI START • JUN 8, 2024"><small>FRANCH AI • AI START • JUN 8, 2024</small></div>
+<div class="cert compact"><img src="images/embedded_19.jpg" alt="CANVA • 5 DESIGNS ACHIEVEMENT"><small>CANVA • 5 DESIGNS ACHIEVEMENT</small></div>
         </div>
 
         <div class="small-note" style="margin-top:16px">
@@ -1034,11 +1075,6 @@
   }
 
   document.querySelectorAll('.work-card').forEach(function(card) {
-    const preview = card.querySelector('video');
-    if (preview) {
-      preview.addEventListener('mouseenter', () => preview.play().catch(()=>{}));
-      preview.addEventListener('mouseleave', () => { preview.pause(); preview.currentTime = 0; });
-    }
     card.addEventListener('click', function(event) {
       if (event.target.closest('a')) return;
       const src = card.getAttribute('data-src');
@@ -1083,122 +1119,6 @@
 
 
 
-
-
-<script src="content/links.js"></script><script src="content/texts.js"></script>
-
-<script>
-(function(){
-  const T = window.TEXTS || {};
-  const set = (sel, value) => {
-    const el = document.querySelector(sel);
-    if (el && value !== undefined) el.textContent = value;
-  };
-  const setAll = (sels, value) => {
-    if (value === undefined) return;
-    sels.forEach(sel => document.querySelectorAll(sel).forEach(el => el.textContent = value));
-  };
-
-  // Welcome
-  set('#intro .eyebrow', T.WELCOME?.eyebrow);
-  set('#intro h1', T.WELCOME?.title);
-  set('#intro .lead b', T.WELCOME?.subtitle);
-  set('#intro .intro-quote', T.WELCOME?.quote);
-  setAll(['#intro .metric:nth-child(1) b'], T.WELCOME?.metric_video_title);
-  setAll(['#intro .metric:nth-child(1) span'], T.WELCOME?.metric_video_text);
-  setAll(['#intro .metric:nth-child(2) b'], T.WELCOME?.metric_images_title);
-  setAll(['#intro .metric:nth-child(2) span'], T.WELCOME?.metric_images_text);
-  setAll(['#intro .metric:nth-child(3) b'], T.WELCOME?.metric_creative_title);
-  setAll(['#intro .metric:nth-child(3) span'], T.WELCOME?.metric_creative_text);
-  set('#intro .print-avatar-caption strong', T.WELCOME?.intro_label);
-  set('#intro .print-avatar-caption p', T.WELCOME?.intro_text);
-  set('#intro .video-note', T.WELCOME?.intro_text);
-
-  // Profile
-  set('#profile .eyebrow', T.PROFILE?.eyebrow);
-  set('#profile h2', T.PROFILE?.title);
-  set('#profile .paper > .grid2 > div:first-child > p', T.PROFILE?.subtitle);
-  set('#profile .profile-card h3', T.PROFILE?.card_title);
-  set('#profile .profile-card p', T.PROFILE?.card_text);
-  set('#profile .profile-list li:nth-child(1) .label', T.PROFILE?.focus_label);
-  set('#profile .profile-list li:nth-child(1) span:last-child', T.PROFILE?.focus_text);
-  set('#profile .profile-list li:nth-child(2) .label', T.PROFILE?.work_label);
-  set('#profile .profile-list li:nth-child(2) span:last-child', T.PROFILE?.work_text);
-  set('#profile .profile-list li:nth-child(3) .label', T.PROFILE?.approach_label);
-  set('#profile .profile-list li:nth-child(3) span:last-child', T.PROFILE?.approach_text);
-
-  // Toolkit
-  set('#toolkit .eyebrow', T.TOOLKIT?.eyebrow);
-  set('#toolkit h2', T.TOOLKIT?.title);
-  const toolCards = document.querySelectorAll('#toolkit .tool');
-  const toolVals = [
-    [T.TOOLKIT?.video_title,T.TOOLKIT?.video_text],
-    [T.TOOLKIT?.images_title,T.TOOLKIT?.images_text],
-    [T.TOOLKIT?.avatars_title,T.TOOLKIT?.avatars_text],
-    [T.TOOLKIT?.creative_title,T.TOOLKIT?.creative_text]
-  ];
-  toolCards.forEach((c,i)=>{
-    if (!toolVals[i]) return;
-    const b=c.querySelector('b'), s=c.querySelector('span');
-    if(b && toolVals[i][0]!==undefined)b.textContent=toolVals[i][0];
-    if(s && toolVals[i][1]!==undefined)s.textContent=toolVals[i][1];
-  });
-
-  // Projects: titles removed by design; categories/descriptions remain editable.
-  set('#projects .eyebrow', T.PROJECTS?.eyebrow);
-  set('#projects h2', T.PROJECTS?.title);
-  set('#projects .grid2.equal p', T.PROJECTS?.description);
-  set('#projects .profile-card h3', T.PROJECTS?.card_title);
-  set('#projects .profile-card p', T.PROJECTS?.card_text);
-  const cards = document.querySelectorAll('#projects .work-card');
-  const pv = [
-    [T.PROJECTS?.archie_category,T.PROJECTS?.archie_description],
-    [T.PROJECTS?.ember_category,T.PROJECTS?.ember_description],
-    [T.PROJECTS?.shtrudel_category,T.PROJECTS?.shtrudel_description],
-    [T.PROJECTS?.music_category,T.PROJECTS?.music_description]
-  ];
-  cards.forEach((c,i)=>{
-    if(!pv[i]) return;
-    const k=c.querySelector('.work-kicker'), s=c.querySelector('.work-sub');
-    if(k && pv[i][0]!==undefined) k.textContent=pv[i][0];
-    if(s && pv[i][1]!==undefined) s.textContent=pv[i][1];
-  });
-  setAll(['#projects .work-action'], T.PROJECTS?.preview_label);
-  setAll(['#projects .full-video-btn'], T.PROJECTS?.full_label);
-
-  // Archie Universe
-  set('#projects .universe-head h3', T.ARCHIE_UNIVERSE?.title);
-  setAll(['#projects .universe-head .eyebrow'], T.ARCHIE_UNIVERSE?.eyebrow);
-  set('#projects .universe-head p', T.ARCHIE_UNIVERSE?.description);
-
-  // Google certificates
-  set('#education .eyebrow', T.GOOGLE_CERTIFICATES?.eyebrow);
-  set('#education h2', T.GOOGLE_CERTIFICATES?.title);
-  set('#education .profile-card h3', T.GOOGLE_CERTIFICATES?.card_title);
-  set('#education .profile-card p', T.GOOGLE_CERTIFICATES?.card_text);
-  set('#education a[href*="coursera.com"]', T.GOOGLE_CERTIFICATES?.verify_label);
-
-  // School certificates
-  set('#school-certificates .eyebrow', T.SCHOOL_CERTIFICATES?.eyebrow);
-  set('#school-certificates h2', T.SCHOOL_CERTIFICATES?.title);
-  set('#school-certificates .grid2.equal p', T.SCHOOL_CERTIFICATES?.description);
-  set('#school-certificates .profile-card h3', T.SCHOOL_CERTIFICATES?.card_title);
-  set('#school-certificates .profile-card p', T.SCHOOL_CERTIFICATES?.card_text);
-
-  // Contacts
-  set('#contact .eyebrow', T.CONTACTS?.eyebrow);
-  set('#contact h2', T.CONTACTS?.title);
-  set('#contact .contact-intro', T.CONTACTS?.intro);
-  set('#contact .contact-row:nth-child(1) .label', T.CONTACTS?.name_label);
-  set('#contact .contact-row:nth-child(2) .label', T.CONTACTS?.email_label);
-  set('#contact .contact-row:nth-child(3) .label', T.CONTACTS?.instagram_label);
-  set('#contact .contact-row:nth-child(4) .label', T.CONTACTS?.telegram_label);
-  set('#contact .contact-row:nth-child(5) .label', T.CONTACTS?.status_label);
-  set('#contact .contact-row:nth-child(5) span:last-child', T.CONTACTS?.status);
-  set('#contact .contact-back a', T.CONTACTS?.back);
-  set('#contact .brand-footer h3', T.CONTACTS?.brand);
-})();
-</script>
 
 </body>
 </html>
