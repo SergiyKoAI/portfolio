@@ -1,0 +1,4 @@
+SergiyKo_AI — AI Portfolio v37
+
+Editable GitHub Pages package.
+Main page copy and layout are in index.html. Project metadata is in projects.json.
