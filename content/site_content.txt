@@ -1,4 +1,5 @@
-SergiyKo_AI — AI Portfolio v37
+SergiyKo_AI — AI Portfolio v38
 
 Editable GitHub Pages package.
 Main page copy and layout are in index.html. Project metadata is in projects.json.
+Selected Works currently contains six project cards, including ADVANCE and KONG.
